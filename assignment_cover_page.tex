@@ -1,0 +1,147 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry} % Margins
+\usepackage{graphicx}       % For the logo
+\usepackage{fontawesome5}   % For Icons
+\usepackage{setspace}       % For spacing
+\usepackage{tikz}           % For the page border
+\usetikzlibrary{calc}       % Required for border calculation
+\usepackage{array}          % For better table alignment
+\usepackage{tabularx}       % For width-adjustable tables
+\usepackage{multirow}       % For better table cells if needed
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+\definecolor{stampcolor}{rgb}{0.9, 0.9, 0.9}
+% --- No Page Numbering for Title Page ---
+\pagenumbering{gobble}
+
+\begin{document}
+	
+	% --- Page Border ---
+	\begin{tikzpicture}[remember picture, overlay]
+		\draw[line width=3pt] 
+		($(current page.north west) + (1cm,-1cm)$) 
+		rectangle 
+		($(current page.south east) + (-1cm,1cm)$);
+	\end{tikzpicture}
+	
+	% --- Main Content ---
+	\begin{center}
+		
+		% 1. College Logo
+		% Ensure 'BCREC_logo.png' or .jpg exists in your folder
+		\includegraphics[width=2.5cm]{BCREC_logo} 
+		
+		\vspace{0.2cm}
+		
+		% 2. College Name & Affiliation
+		{\Large \textbf{Dr. B. C. Roy Engineering College, Durgapur}} \\
+		\vspace{0.05cm}
+		{\footnotesize \textit{(Affiliated to Maulana Abul Kalam Azad University of Technology, West Bengal)}} \\
+		
+		\vspace{0.05cm}
+		
+		% 3. Department
+		{\Large \textbf{Department of Electrical Engineering}} \\ 
+		\vspace{0.01cm}
+		
+		% 10. Academic Session
+		{\large \textbf{Academic Session: 2025-26 (EVEN)}}
+		
+		\vspace{0.01cm}
+		\rule{\textwidth}{2pt} % Horizontal Line
+		\vspace{0.01cm}
+		
+		% 11. Assignment No
+		{\large \textbf{ASSIGNMENT NO: 02}} \\[0.1cm]
+		
+		% 5 & 6. Paper Name and Code
+		{\Large \textbf{Power System Planning and Reliability}} \\
+		\vspace{0.1cm}
+		{\Large \textbf{Paper Code: PSM104}}
+		
+		\vspace{0.2cm}
+		\rule{\textwidth}{2pt} % Horizontal Line
+		\vspace{0.2cm}
+		
+		% STUDENT DETAILS SECTION
+		\renewcommand{\arraystretch}{1.5} % Spacing between rows
+		\begin{tabular}{r l}
+			% Name
+			\large \faUser \hspace{0.2cm} \textbf{Name:} & \large \hspace{0.5cm} YOUR NAME HERE \\
+			
+			% University Roll
+			\large \faIdCard \hspace{0.2cm} \textbf{Univ. Roll No:} & \large \hspace{0.5cm} 123456789 \\
+			
+			% Branch
+			\large \faCodeBranch \hspace{0.2cm} \textbf{Branch/Stream:} & \large \hspace{0.5cm} M.Tech (EE) \hspace{0.5cm} [\textbf{PG}] \\
+			
+			% Semester
+			\large \faLayerGroup \hspace{0.2cm} \textbf{Semester:} & \large \hspace{0.5cm} I (1st) \\
+			
+			% Batch
+			\large \faUsers \hspace{0.2cm} \textbf{Batch:} & \large \hspace{0.5cm} 2025 -- 2027 \\
+			
+			% Date of Submission
+			\large \faCalendarCheck \hspace{0.2cm} \textbf{Date of Submission:} & \large \hspace{0.5cm} \today \\
+		\end{tabular}
+		
+	\end{center}
+	
+%	\vfill % Pushes the rest to the bottom
+	
+	% --- Signature Section ---
+	\begin{flushright}
+		\vspace{0.1cm}
+		% 12. Signature for student
+		\rule{5cm}{0.5pt} \\
+		\textbf{Signature of Student}
+	\end{flushright}
+	
+	\vspace{0.5cm}
+	
+	% --- 13. Faculty Feedback Section (NBA/NAAC Style) ---
+	\noindent
+	\fbox{
+		\begin{minipage}{\dimexpr\textwidth-4\fboxsep-4\fboxrule\relax}
+			\vspace{0.2cm}
+			\centering \textbf{\large \faChalkboardTeacher \ FACULTY FEEDBACK / REMARKS} \\
+			\vspace{0.2cm}
+			
+			% Evaluation Table (NBA/NAAC Style)
+			\centering
+			\renewcommand{\arraystretch}{1.2}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				\textbf{Poor} & \textbf{Average} & \textbf{Good} & \textbf{Excellent} \\
+				\scriptsize (1-2) & \scriptsize (3-5) & \scriptsize (6-8) & \scriptsize (9-10) \\
+				\hline
+				\hspace{2cm} & \hspace{2cm} & \hspace{2cm} & \hspace{2cm} \\ [0.3cm] % Empty cells for ticks
+				\hline
+			\end{tabular}
+			
+			\vspace{0.1cm}
+			
+			\raggedright
+			\textbf{Comments:} \hrulefill \\
+			
+			\vspace{0.1cm}
+			
+			\begin{tabularx}{\linewidth}{X r}
+				\textbf{Total Marks:} \underline{\hspace{3.5cm}} & 
+				\textbf{Faculty Signature:} \underline{\hspace{3.5cm}}\\
+				& Kingsuk Majumdar Ph.D. (Engg)\\
+				& Asstt. Professor/ EE, BCREC
+			\end{tabularx}
+%			\vspace{2.0cm}
+			\begin{tabularx}{\linewidth}{X r}
+				\vspace{2.0cm} & \vspace{2.0cm}\\
+				\textcolor{stampcolor}{College Stamp} & \textcolor{stampcolor}{Faculty Stamp}\\
+			\end{tabularx}
+		\end{minipage}
+		
+	}
+	\tiny{{\calligra \textcolor{stampcolor}{\reflectbox{\copyright} 2026 Kingsuk}}}
+\end{document}
