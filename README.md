@@ -1,29 +1,33 @@
-# TopPageAssignmentTemplate
 # 📄 LaTeX Assignment Cover Page Template
 
 A professional, NBA/NAAC-compliant assignment cover page template designed for academic institutions in India. This template provides a clean, structured format for student assignment submissions with integrated faculty evaluation framework.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/KingsukMajumdar/TopPageAssignmentTemplate/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/KingsukMajumdar/assignment-cover-page/graphs/commit-activity)
 
 ---
 
 ## ✨ Features
 
+- **Two-Page System**: Page 1 for student submission, Page 2 for faculty NBA/NAAC evaluation
 - **Professional Design**: Clean, academic layout with institutional branding
-- **NBA/NAAC Compliant**: Structured format suitable for accreditation documentation
+- **Full NBA/NAAC Compliance**: Complete Outcome-Based Education (OBE) framework
+- **CO-PO Mapping**: Course and Program Outcome correlation tracking
+- **Bloom's Taxonomy**: Cognitive level assessment (L1-L6)
+- **Detailed Rubrics**: Color-coded 4-level evaluation criteria
+- **Attainment Tracking**: CO attainment calculation and target achievement
 - **Faculty Evaluation Framework**: Built-in rubric with Poor/Average/Good/Excellent grading scale
 - **FontAwesome Icons**: Modern iconography for better visual appeal
-- **Single Page Layout**: Optimized to fit all content on one A4 page
+- **Single Page Layouts**: Both pages optimized to fit on one A4 page each
 - **Customizable**: Easy to modify for different institutions and courses
-- **Border Design**: Professional 3pt border frame
+- **Border Design**: Professional border frame
 
 ---
 
 ## 📋 Preview
 
-The template includes:
+### Page 1: Student Submission Cover
 - ✅ College logo placement
 - ✅ Institution name and affiliation
 - ✅ Department details
@@ -36,6 +40,15 @@ The template includes:
 - ✅ Faculty feedback and evaluation rubric
 - ✅ Marks allocation section
 - ✅ Faculty signature with designation
+
+### Page 2: NBA/NAAC Outcome Assessment (For Faculty)
+- ✅ Course Outcome (CO) mapping with descriptions
+- ✅ Program Outcome (PO) mapping (11 POs with H/M/L correlation)
+- ✅ Bloom's Taxonomy levels (L1-L6)
+- ✅ Detailed evaluation rubric with color-coded performance levels
+- ✅ CO attainment calculation and tracking
+- ✅ Qualitative feedback section
+- ✅ Faculty and HoD signature provision
 
 ---
 
@@ -129,9 +142,14 @@ Edit the following sections in the `.tex` file:
 
 ### 4. Compile the Document
 
-**Using Command Line**:
+**Page 1 (Student Cover)**:
 ```bash
 pdflatex assignment_cover_page.tex
+```
+
+**Page 2 (NBA/NAAC Evaluation - For Faculty)**:
+```bash
+pdflatex assignment_page2_nba_naac.tex
 ```
 
 **Using TeXstudio/TeXmaker**:
@@ -141,6 +159,8 @@ pdflatex assignment_cover_page.tex
 **Using Overleaf**:
 - Upload the `.tex` file and logo
 - Click "Recompile"
+
+**Note**: Page 2 is designed for faculty use during evaluation. It includes CO-PO mapping, Bloom's taxonomy, and detailed assessment rubrics as per NBA/NAAC requirements.
 
 ---
 
@@ -177,13 +197,15 @@ Replace `\today` with a specific date: `15th January 2026`
 ## 📁 File Structure
 
 ```
-assignment-cover-page/
-├── assignment_cover_page.tex    # Main LaTeX template
-├── BCREC_logo.png               # College logo (add your own)
-├── README.md                     # This file
-├── LICENSE                       # MIT License
-└── examples/                     # Sample outputs
-    └── sample_output.pdf
+TopPageAssignmentTemplate/
+├── assignment_cover_page.tex           # Page 1: Student submission cover
+├── assignment_page2_nba_naac.tex      # Page 2: NBA/NAAC outcome assessment
+├── BCREC_logo.png                      # College logo (add your own)
+├── README.md                           # This file
+├── LICENSE                             # MIT License
+└── examples/                           # Sample outputs
+    ├── sample_output.pdf               # Page 1 example
+    └── sample_outcomeNBA_NAAC.pdf     # Page 2 example
 ```
 
 ---
@@ -246,8 +268,8 @@ If you use this template, please consider:
 ## 📞 Support
 
 For issues, questions, or suggestions:
-- Open an [Issue](https://github.com/KingsukMajumdar/assignment-cover-page/issues)
-- Start a [Discussion](https://github.com/KingsukMajumdar/assignment-cover-page/discussions)
+- Open an [Issue](https://github.com/KingsukMajumdar/TopPageAssignmentTemplate/issues)
+- Start a [Discussion](https://github.com/KingsukMajumdar/TopPageAssignmentTemplate/discussions)
 
 ---
 
