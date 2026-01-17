@@ -1,0 +1,204 @@
+%!TEX program = pdflatex
+% -*- coding: utf-8 -*-
+\documentclass[12pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[top=0.7in, bottom=0.7in, left=0.7in, right=0.7in]{geometry}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+
+% --- Color Definitions ---
+\definecolor{headerblue}{RGB}{0, 51, 102}
+\definecolor{lightgray}{RGB}{240, 240, 240}
+\definecolor{stampcolor}{RGB}{200, 200, 200}
+\definecolor{excellentgreen}{RGB}{0, 153, 76}
+\definecolor{goodblue}{RGB}{0, 102, 204}
+\definecolor{avgOrange}{RGB}{255, 153, 0}
+\definecolor{poorred}{RGB}{204, 0, 0}
+
+% --- No Page Numbering ---
+\pagenumbering{gobble}
+
+\begin{document}
+	
+	% --- Page Border ---
+	\begin{tikzpicture}[remember picture, overlay]
+		\draw[line width=2pt] 
+		($(current page.north west) + (0.8cm,-0.8cm)$) 
+		rectangle 
+		($(current page.south east) + (-0.8cm,0.8cm)$);
+	\end{tikzpicture}
+	
+	% --- Header Section ---
+	\begin{center}
+		{\Large \textbf{ASSIGNMENT EVALUATION \& OUTCOME ASSESSMENT}} \\
+		\vspace{0.1cm}
+		{\normalsize \textit{(NBA/NAAC Compliance Document)}}
+	\end{center}
+	
+	\vspace{0.1cm}
+	\noindent\rule{\textwidth}{1.2pt}
+	\vspace{0.2cm}
+	
+	% SECTION 1: COURSE OUTCOME MAPPING
+	\noindent
+	\fbox{
+		\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+			\vspace{0.1cm}
+			{\large \textbf{\faBullseye\ SECTION A: COURSE OUTCOME (CO) MAPPING}}
+			\vspace{0.1cm}
+			
+			\centering
+			\renewcommand{\arraystretch}{1.2}
+			\small
+			\begin{tabular}{|c|p{11.5cm}|c|}
+				\hline
+				\rowcolor{lightgray}
+				\textbf{CO} & \textbf{Course Outcome Description} & \textbf{Addressed} \\
+				\hline
+				CO1 & Analyze power system planning requirements & \\
+				\hline
+				CO2 & Evaluate reliability indices of power systems & \\
+				\hline
+				CO3 & Design optimal generation expansion plans & \\
+				\hline
+				CO4 & Assess transmission system reliability & \\
+				\hline
+				CO5 & Apply modern tools for reliability analysis & \\
+				\hline
+			\end{tabular}
+			\vspace{0.15cm}
+		\end{minipage}
+	}
+	
+	\vspace{0.2cm}
+	
+	% SECTION 2: PROGRAM OUTCOME MAPPING
+	\noindent
+	\fbox{
+		\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+			\vspace{0.1cm}
+			{\large \textbf{\faGraduationCap\ SECTION B: PROGRAM OUTCOME (PO) MAPPING}}
+			\vspace{0.1cm}
+			
+			\centering
+			\renewcommand{\arraystretch}{1.2}
+			\scriptsize
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\hline
+				\rowcolor{lightgray}
+				\textbf{CO} & \textbf{PO1} & \textbf{PO2} & \textbf{PO3} & \textbf{PO4} & \textbf{PO5} & \textbf{PO6} & \textbf{PO7} & \textbf{PO8} & \textbf{PO9} & \textbf{PO10} & \textbf{PO11} \\
+				\hline
+				Mapped & & & & & & & & & & & \\[0.15cm]
+				\hline
+			\end{tabular}
+			\vspace{0.1cm}
+		\end{minipage}
+	}
+	
+	\vspace{0.2cm}
+	
+	% SECTION 3: BLOOM'S TAXONOMY LEVEL
+	\noindent
+	\fbox{
+		\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+			\vspace{0.1cm}
+			{\large \textbf{\faLayerGroup\ SECTION C: BLOOM'S TAXONOMY LEVEL}}
+			\vspace{0.1cm}
+			
+			\centering
+			\renewcommand{\arraystretch}{1.2}
+			\small
+			\begin{tabular}{|c|c|c|c|c|c|}
+				\hline
+				\rowcolor{lightgray}
+				\textbf{L1} & \textbf{L2} & \textbf{L3} & \textbf{L4} & \textbf{L5} & \textbf{L6} \\
+				\hline
+				\hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm} \\[0.15cm]
+				\hline
+			\end{tabular}
+		\end{minipage}
+	}
+	
+	\vspace{0.2cm}
+	
+	% SECTION 4: DETAILED EVALUATION RUBRIC
+	\noindent
+	\fbox{
+		\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+			\vspace{0.1cm}
+			{\large \textbf{\faClipboardCheck\ SECTION D: DETAILED EVALUATION RUBRIC}}
+			\vspace{0.1cm}
+			
+			\centering
+			\renewcommand{\arraystretch}{1.1}
+			\footnotesize
+			\begin{tabular}{|l|c|c|c|c|c|c|}
+				\hline
+				\rowcolor{lightgray}
+				\textbf{Criteria} & \textbf{Wgt} & \cellcolor{poorred}\textcolor{white}{\textbf{Poor}} & \cellcolor{avgOrange}\textcolor{white}{\textbf{Avg}} & \cellcolor{goodblue}\textcolor{white}{\textbf{Good}} & \cellcolor{excellentgreen}\textcolor{white}{\textbf{Exc}} & \textbf{Marks} \\
+				\hline
+				\textbf{1. Content} & 35\% & & & & & \\
+				\hline
+				\textbf{2. Technical} & 35\% & & & & & \\
+				\hline
+				\textbf{3. Presentation} & 20\% & & & & & \\
+				\hline
+				\textbf{4. Reference} & 10\% & & & & & \\
+				\hline
+				\rowcolor{lightgray}
+				\multicolumn{2}{|r|}{\textbf{TOTAL}} & \multicolumn{4}{c|}{} & \textbf{/ 100} \\
+				\hline
+			\end{tabular}
+			\vspace{0.1cm}
+		\end{minipage}
+	}
+	
+	\vspace{0.2cm}
+	
+	% SECTION 5: CO ATTAINMENT & FEEDBACK
+	\noindent
+	\fbox{
+		\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+			\vspace{0.1cm}
+			{\large \textbf{\faChartLine\ SECTION E: ATTAINMENT \& FEEDBACK}}
+			\vspace{0.1cm}
+			
+			\small
+			\textbf{Faculty Comments:} \hrulefill \\
+			\rule{\linewidth}{0.4pt} \\
+			\rule{\linewidth}{0.4pt}
+			
+			\vspace{0.3cm}
+			\begin{tabularx}{\linewidth}{X r}
+				\textbf{Evaluated By:} & \textbf{Date:} \underline{\hspace{3cm}} \\
+				Kingsuk Majumdar, Ph.D. & \\
+				Asst. Professor/EE, BCREC & \rule{4cm}{0.4pt} \\
+				& \textbf{Faculty Signature}
+			\end{tabularx}
+		\end{minipage}
+	}
+	
+	\vfill
+	% --- Footer ---
+	\begin{center}
+		\footnotesize \faInfoCircle\ Conducted as per NBA/NAAC guidelines for OBE.
+	\end{center}
+	
+	\begin{center}
+		{\calligra \textcolor{stampcolor}{\scalebox{-1}[1]{\copyright} 2026 Kingsuk}}
+	\end{center}
+	
+\end{document}
