@@ -83,7 +83,7 @@ brew install --cask mactex
 
 ```bash
 git clone https://github.com/KingsukMajumdar/TopPageAssignmentTemplate.git
-cd assignment-cover-page
+cd TopPageAssignmentTemplate
 ```
 
 ### 2. Add Your College Logo
